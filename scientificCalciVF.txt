@@ -1,0 +1,26 @@
+<apex:page controller="scientificCalci">
+    <apex:form >
+    	<apex:pageBlock >
+        	<apex:pageBlockSection >
+            	<apex:pageBlockSectionItem >
+                    <apex:outputLabel value="value"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                	<apex:inputText value="{!value}" html-placeholder="Enter Value"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:commandButton action="{!getSine}" value="Calculate Sine" reRender="res"/>
+                </apex:pageBlockSectionItem>
+            	<apex:pageBlockSectionItem >
+                	<apex:commandButton action="{!getSqroot}" value="Calculate SquareRoot" reRender="res"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Result"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                	<apex:inputText value="{!result}" html-placeholder="Result will be displayes" id="res"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

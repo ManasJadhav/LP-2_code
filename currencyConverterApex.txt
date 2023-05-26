@@ -1,0 +1,38 @@
+public class currencyConverter1 {
+	public string currency1 {get ; set ;}
+    public string currency2 {get ; set ;}
+    public double value {get ; set ;}
+    public double result {get ; set ;}
+    
+    public void convert()
+    {
+		if(currency1 == currency2)
+        {
+            result = value;
+        }
+        else if(currency1 == 'Rupee' && currency2 == 'Dollar')
+        {
+            result = value / 82.23;
+        }
+        else if(currency1 == 'Dollar' && currency2 == 'Rupee')
+        {
+			result = value * 82.23;
+        }
+        else if(currency1 == 'Rupee' && currency2 == 'Pound')
+        {
+			result = value * 101.68;
+        }
+        else if(currency1 == 'Pound' && currency2 == 'Rupee')
+        {
+            result = value / 101.68;
+        }
+        else if(currency1 == 'Pound' && currency2 == 'Dollar')
+        {
+            result = value / 1.26;
+        }
+        else if(currency1 == 'Dollar' && currency2 == 'Pound')
+        {
+            result = value * 1.26;
+        }
+    } 
+}

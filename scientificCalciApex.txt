@@ -1,0 +1,14 @@
+public class scientificCalci {
+    public double value {get ; set;}
+    public double result {get; set;}
+    
+    public void getSine()
+    {
+		result = math.sin(value);
+    }
+    
+    public void getSqroot()
+    {
+        result = math.sqrt(value);
+    }
+}
